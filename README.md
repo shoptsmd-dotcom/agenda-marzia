@@ -34,6 +34,17 @@ Apri il link pubblicato con Safari. Dal menu **Condividi** scegli **Aggiungi all
 
 La settimana mantiene tutte e sette le colonne anche in verticale; i dettagli degli appuntamenti si leggono nella sezione del giorno sottostante. Ruota il dispositivo in orizzontale per avere più spazio.
 
+## Contare le settimane
+
+Nel riquadro **Parto da questo giorno** scegli la data iniziale. Puoi anche toccare il giorno nella settimana e premere **Usa giorno selezionato**.
+
+- **Tra 3 settimane** porta allo stesso giorno 21 giorni dopo; **Tra 4 settimane** porta a 28 giorni dopo.
+- I due pulsanti partono sempre dalla data indicata: premendoli ripetutamente non si sommano altre settimane.
+- Le frecce della settimana sfogliano una pagina alla volta e mantengono lo stesso giorno della settimana. Il contatore mostra +1, +2, +3, +4 oppure le settimane precedenti con segno meno.
+- **Torna alla partenza** riporta alla data iniziale. **Oggi** imposta la partenza alla data odierna.
+- Il salto mette in evidenza il giorno e mostra gli appuntamenti già inseriti; non crea o sposta appuntamenti. Scegli una casella oppure **Aggiungi** per fissare il nuovo impegno.
+- La data di partenza del conteggio vale per la sessione corrente; i tuoi appuntamenti restano salvati come prima.
+
 ## Dati e backup
 
 Gli appuntamenti vengono salvati in `localStorage` su questo dispositivo e su questo indirizzo web. Non c’è un account dell’agenda né un server di sincronizzazione. Safari, la web app aggiunta alla Home e un altro browser possono avere archivi separati: scegli dove usare stabilmente l’agenda ed esporta un backup prima di passare a un’altra modalità.
