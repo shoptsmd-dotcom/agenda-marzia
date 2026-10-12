@@ -38,8 +38,8 @@ La settimana mantiene tutte e sette le colonne anche in verticale; i dettagli de
 
 Nel riquadro **Parto da questo giorno** scegli la data iniziale. Puoi anche toccare il giorno nella settimana e premere **Usa giorno selezionato**.
 
-- **Tra 3 settimane** porta allo stesso giorno 21 giorni dopo; **Tra 4 settimane** porta a 28 giorni dopo.
-- I due pulsanti partono sempre dalla data indicata: premendoli ripetutamente non si sommano altre settimane.
+- **Tra 2 settimane** porta allo stesso giorno 14 giorni dopo; **Tra 3 settimane** porta allo stesso giorno 21 giorni dopo; **Tra 4 settimane** porta a 28 giorni dopo.
+- I tre pulsanti partono sempre dalla data indicata: premendoli ripetutamente non si sommano altre settimane.
 - Le frecce della settimana sfogliano una pagina alla volta e mantengono lo stesso giorno della settimana. Il contatore mostra +1, +2, +3, +4 oppure le settimane precedenti con segno meno.
 - **Torna alla partenza** riporta alla data iniziale. **Oggi** imposta la partenza alla data odierna.
 - Il salto mette in evidenza il giorno e mostra gli appuntamenti già inseriti; non crea o sposta appuntamenti. Scegli una casella oppure **Aggiungi** per fissare il nuovo impegno.
@@ -69,3 +69,17 @@ Non è stato effettuato un test visuale su browser né un test fisico su iPhone/
 ## Struttura tecnica
 
 HTML, CSS e JavaScript senza dipendenze. Tutti i percorsi sono relativi, quindi funzionano anche in un sottopercorso GitHub Pages. Per testare localmente, servi la cartella dell’app con un server HTTP; non aprire direttamente il file dal filesystem per verificare il service worker.
+
+## Durata visibile
+
+Ogni appuntamento occupa un blocco continuo proporzionato alla durata, con ora di inizio e fine. Ad esempio, 17:00 per 2 ore copre fino alle 19:00. Gli appuntamenti sovrapposti sono affiancati. Vale anche per quelli già salvati.
+
+## Penna e riquadri
+
+1. Tocca **Penna e riquadri**. Le colonne si allargano; scorri orizzontalmente dalla riga delle date per raggiungere gli altri giorni.
+2. Disegna un rettangolo (oppure trascina dall’inizio alla fine) negli orari liberi di un giorno, con la penna o un dito. Il blocco si allinea a intervalli di 15 minuti.
+3. Scrivi direttamente dentro il riquadro con la penna. Se vuoi scrivere con il dito, scegli **Dito** nella barra. In modalità **Penna** i tocchi non aggiungono tratti.
+4. Scegli Lavoro o Personale e premi **Salva**. Puoi annullare l’ultimo tratto o l’intero riquadro prima del salvataggio.
+5. Premi **Esci da penna e riquadri** per tornare alla vista settimanale compatta e modificare gli appuntamenti con un tocco.
+
+Un riquadro non può essere disegnato sopra un appuntamento esistente. La scrittura rimane un disegno e viene mostrata anche nella settimana; non è riconoscimento del testo. La compatibilità dei gesti e della penna va verificata sul tablet utilizzato.
